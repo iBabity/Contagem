@@ -9,15 +9,67 @@ body {
     text-align: center;
     margin: 0;
     background-image: url("fundo.jpg"); /* Coloque o nome da sua imagem aqui */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-size: cover; /* Faz a imagem cobrir toda a tela */
     background-position: center; /* Centraliza a imagem */
-    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa ao rolar a página */
-    color: white; /* Muda a cor do texto para branco para melhorar a visibilidade */
+    background-attachment: fixed; /* A imagem vai ficar fixa ao rolar a página */
+    color: white; /* Cor do texto */
+}
+
+/* Ajuste de responsividade */
+@media screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* No celular, evita que a imagem fique fixa ao rolar */
+        background-size: auto; /* Ajusta a imagem para não distorcer no celular */
+    }
 }
 
 /* Ajusta o espaçamento do conteúdo */
 .conteudo {
-    margin-top: 600px; /* Aumente esse valor para descer mais o conteúdo */
+    margin-top: 600px;
+}
+
+/* Formulário de assinatura */
+.assinatura {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro com transparência */
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.assinatura h2 {
+    margin-bottom: 10px;
+}
+
+.assinatura p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.assinatura input[type="email"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.assinatura button {
+    width: 80%;
+    padding: 10px;
+    background-color: #ff5733; /* Cor de fundo do botão */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.assinatura button:hover {
+    background-color: #e74c3c; /* Cor de fundo do botão ao passar o mouse */
 }
 
 .contador {
@@ -27,4 +79,17 @@ body {
 
 .label {
     font-size: 20px;
+}
+
+/* Estilizando o rodapé */
+footer {
+    position: fixed; /* Fixa o rodapé na parte inferior da tela */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo escuro */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
 }

@@ -61,3 +61,16 @@ footer {
     text-align: center;
     font-size: 14px;
 }
+
+/* Ajustes específicos para telas pequenas (celular) */
+@media screen and (max-width: 768px) {
+    .conteudo {
+        top: 0; /* Move o conteúdo para o topo da tela */
+        left: 50%; /* Continua centralizado horizontalmente */
+        transform: translateX(-50%); /* Ajuste horizontal para centralizar */
+    }
+
+    body {
+        background-size: cover;
+    }
+}    

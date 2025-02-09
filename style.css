@@ -72,5 +72,6 @@ footer {
 
     body {
         background-size: cover;
+        background-image: url("fundoCel.jpg");
     }
 }    

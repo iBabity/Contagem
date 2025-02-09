@@ -1,0 +1,30 @@
+/* Garante que o html e o body ocupem toda a altura da tela */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    background-image: url("fundo.jpg"); /* Coloque o nome da sua imagem aqui */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa ao rolar a página */
+    color: white; /* Muda a cor do texto para branco para melhorar a visibilidade */
+}
+
+/* Ajusta o espaçamento do conteúdo */
+.conteudo {
+    margin-top: 600px; /* Aumente esse valor para descer mais o conteúdo */
+}
+
+.contador {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.label {
+    font-size: 20px;
+}

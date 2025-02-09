@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIAGEM PARA GO</title>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="conteudo">
+        <h1>Contagem Regressiva</h1>
+        <p class="label">Tempo restante:</p>
+        <div class="contador" id="contador"></div>
+        <p class="label">para 03/03/2025.</p>
+    </div>
+
+    <footer>
+        <p>By Eder</p>
+    </footer>
+
+    <script>
+        function updateCounter() {
+            const targetDate = new Date("2025-03-03T00:00:00"); // Defina a data e hora do evento aqui
+            const now = new Date();
+            const timeDiff = targetDate - now;
+
+            if (timeDiff <= 0) {
+                document.getElementById("contador").innerHTML = "Evento ocorrido!";
+                return;
+            }
+
+            const days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+            document.getElementById("contador").innerHTML =
+                `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        setInterval(updateCounter, 1000); // Atualiza a cada 1 segundo
+    </script>
+</body>
+</html>

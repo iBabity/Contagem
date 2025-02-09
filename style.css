@@ -65,7 +65,7 @@ footer {
 /* Ajustes específicos para telas pequenas (celular) */
 @media screen and (max-width: 768px) {
     .conteudo {
-        top: 25; /* Move o conteúdo para o topo da tela */
+        top: 15; /* Move o conteúdo para o topo da tela */
         left: 50%; /* Continua centralizado horizontalmente */
         transform: translateX(-50%); /* Ajuste horizontal para centralizar */
     }
